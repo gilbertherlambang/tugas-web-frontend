@@ -1,9 +1,13 @@
 <template>
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <router-link to="/">Halaman Auth</router-link> |
+  <router-link to="/todo">Halaman Todo</router-link> |
+  <router-link to="/user">Halaman User</router-link>
+  <router-view to="/user"></router-view>
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Todo from "./components/Todo.vue";
+import User from "./components/User.vue";
 </script>
 
 <style>
